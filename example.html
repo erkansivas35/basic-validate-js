@@ -24,11 +24,15 @@
     <button onclick="formSend()">VALİDATE</button>
   </div>
 
-  <script src="dist/form-validate.min.js"></script>
+  <script src="js/form-validate.js"></script>
   <script>
+    //Regex Validate
+    var numberPattern = /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/;
+    console.log(patternControl('1234567890', numberPattern));
+
     function formSend() {
-      console.log(textControl('txtName'));
-      console.log(emailControl('txtMail'));
+      console.log(textControl('txtName')); //Text Validate
+      console.log(emailControl('txtMail')); //E-Mail Validate
     }
   </script>
 </body>

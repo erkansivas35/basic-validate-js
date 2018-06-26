@@ -14,3 +14,8 @@ function emailControl(selector) {
   let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return regex.test(selectItem);
 }
+
+function patternControl(outString, pattern) {  
+  let regex = pattern;
+  return regex.test(outString);
+}

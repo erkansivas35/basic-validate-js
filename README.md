@@ -21,3 +21,10 @@
 ```javascript
   emailControl('txtMail'); // return true or false
 ```
+
+**Regex Validate**
+
+```javascript
+    var numberPattern = /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/;
+    patternControl('1234567890', numberPattern); // return true or false
+```
