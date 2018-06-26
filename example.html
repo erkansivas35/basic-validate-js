@@ -23,10 +23,15 @@
     <input id="txtIban" type="text" placeholder="Iban">
 
     <button onclick="formSend()">VALİDATE</button>
+
+    <p id="lookConsole"></p>
   </div>
 
   <script src="js/form-validate.js"></script>
   <script>
+    var lookConsole = document.getElementById('lookConsole');
+    var htmlInput = document.querySelector('.form');
+
     //Regex Validate
     var numberPattern = /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/;
     console.log("Regex control: " + patternControl('1234567890', numberPattern));
@@ -35,7 +40,16 @@
       console.log('Text control: ' + textControl('txtName')); //Text Validate
       console.log('Email control: ' + emailControl('txtMail')); //E-Mail Validate
       console.log('Iban control: ' + ibanControl('txtIban')); //Iban Validate
+
+      //
+      lookConsole.innerHTML = 'Look Console :)';
+      lookConsole.style.visibility = "visible";
+      //
     }
+
+    htmlInput.addEventListener("focus", function () {
+      lookConsole.style.visibility = "hidden";
+    }, true);
   </script>
 </body>
 
