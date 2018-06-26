@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validate JS Example</title>
+  <style>
+    .form input,
+    button {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form">
+    <input id="txtName" type="text" placeholder="Name">
+    <input id="txtMail" type="email" placeholder="Email">
+
+    <button onclick="formSend()">VALİDATE</button>
+  </div>
+
+  <script src="dist/form-validate.min.js"></script>
+  <script>
+    function formSend() {
+      console.log(textControl("txtName"));
+      console.log(emailControl("txtMail"));
+    }
+  </script>
+</body>
+
+</html>
