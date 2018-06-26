@@ -20,7 +20,7 @@
   <div class="form">
     <input id="txtName" type="text" placeholder="Name">
     <input id="txtMail" type="email" placeholder="Email">
-    <input id="txtIban" type="text" placeholder="Iban">
+    
 
     <button onclick="formSend()">VALİDATE</button>
   </div>
@@ -32,9 +32,9 @@
     console.log("Regex control: " + patternControl('1234567890', numberPattern));
 
     function formSend() {
-      console.log("Text control: " + textControl('txtName')); //Text Validate
-      console.log("Email control: " + emailControl('txtMail')); //E-Mail Validate
-      console.log("Iban control: " + ibanControl('txtIban')); //Iban Validate
+      console.log('Text control: ' + textControl('txtName')); //Text Validate
+      console.log('Email control: ' + emailControl('txtMail')); //E-Mail Validate
+      console.log('Iban control: ' + ibanControl('txtIban')); //Iban Validate
     }
   </script>
 </body>

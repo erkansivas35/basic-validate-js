@@ -22,6 +22,16 @@
   emailControl('txtMail'); // return true or false
 ```
 
+**Iban Validate**
+
+```html
+    <input id="txtMail" type="email" placeholder="Email">
+```
+
+```javascript
+    ibanControl('txtIban'); // return true or false
+```
+
 **Regex Validate**
 
 ```javascript
