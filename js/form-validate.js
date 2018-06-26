@@ -15,6 +15,12 @@ function emailControl(selector) {
   return regex.test(selectItem);
 }
 
+function ibanControl(selector) { 
+  let selectItem = document.getElementById(selector).value; 
+  let regex = /\b[A-Za-z]{2}[0-9]{2}(?:[ ]?[0-9]{4}){4}(?!(?:[ ]?[0-9]){3})(?:[ ]?[0-9]{1,2})?\b/;
+  return regex.test(selectItem);
+}
+
 function patternControl(outString, pattern) {  
   let regex = pattern;
   return regex.test(outString);
