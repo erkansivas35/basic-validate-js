@@ -1,4 +1,4 @@
-# Basic Validate JS - No jQuery!,
+# Basic Validate JS - No jQuery!
 You can validate JavaScript forms with Basic Validate JS.
 
 ### Install:
