@@ -9,7 +9,7 @@
 ```
 
 ```javascript
-  textControl("txtName") // return true or false
+  textControl('txtName'); // return true or false
 ```
 
 **E-Mail Validate**
@@ -19,5 +19,5 @@
 ```
 
 ```javascript
-  emailControl("txtMail") // return true or false
+  emailControl('txtMail'); // return true or false
 ```
