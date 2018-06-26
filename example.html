@@ -34,7 +34,7 @@
 
     //Regex Validate
     var numberPattern = /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/;
-    console.log("Regex control: " + patternControl('1234567890', numberPattern));
+    console.log('Regex control: ' + patternControl('1234567890', numberPattern));
 
     function formSend() {
       console.log('Text control: ' + textControl('txtName')); //Text Validate
@@ -43,12 +43,12 @@
 
       //
       lookConsole.innerHTML = 'Look Console :)';
-      lookConsole.style.visibility = "visible";
+      lookConsole.style.visibility = 'visible';
       //
     }
 
-    htmlInput.addEventListener("focus", function () {
-      lookConsole.style.visibility = "hidden";
+    htmlInput.addEventListener('focus', function () {
+      lookConsole.style.visibility = 'hidden';
     }, true);
   </script>
 </body>
