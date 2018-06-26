@@ -1,7 +1,7 @@
 # Basic Validate JS - No jQuery!,
 You can validate JavaScript forms with Basic Validate JS.
 
-##Install
+## Install
 
 ```html
     <script src="dist/form-validate.min.js"></script>
