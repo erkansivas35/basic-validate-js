@@ -25,7 +25,7 @@
 **Iban Validate**
 
 ```html
-    <input id="txtMail" type="email" placeholder="Email">
+    <input id="txtIban" type="text" placeholder="Iban">
 ```
 
 ```javascript
