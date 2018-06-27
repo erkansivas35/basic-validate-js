@@ -19,7 +19,7 @@ You can validate JavaScript forms with Basic Validate JS.
   textControl('txtName'); // return true or false
 ```
 
-**E-Mail Validate**
+**Email Validate**
 
 ```html
   <input id="txtMail" type="email" placeholder="Email">
