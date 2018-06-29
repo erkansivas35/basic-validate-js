@@ -21,6 +21,7 @@
     <input id="txtName" type="text" placeholder="Name">
     <input id="txtMail" type="email" placeholder="Email">
     <input id="txtIban" type="text" placeholder="Iban">
+    <input type="date" id="txtDate" value="2018-07-29" />
 
     <button onclick="formSend()">VALİDATE</button>
 
@@ -36,10 +37,14 @@
     var numberPattern = /^(([0-9]*)|(([0-9]*)\.([0-9]*)))$/;
     console.log('Regex control: ' + patternControl('1234567890', numberPattern));
 
+    //Custom Date Control
+    console.log('Custom date control: ' + customDateControl('29/06/2018')); //Format: DD/MM/YYYY
+
     function formSend() {
       console.log('Text control: ' + textControl('txtName')); //Text Validate
       console.log('Email control: ' + emailControl('txtMail')); //E-Mail Validate
       console.log('Iban control: ' + ibanControl('txtIban')); //Iban Validate
+      console.log('Date control: ' + dateControl('txtDate')); //Iban Validate
       console.log('________________________');
 
       //

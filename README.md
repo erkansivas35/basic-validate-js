@@ -12,21 +12,38 @@ You can validate JavaScript forms with Basic Validate JS.
 **Text Validate**
 
 ```html
-  <input id="txtName" type="text" placeholder="Name">
+    <input id="txtName" type="text" placeholder="Name">
 ```
 
 ```javascript
-  textControl('txtName'); // return true or false
+    textControl('txtName'); // return true or false
 ```
 
 **Email Validate**
 
 ```html
-  <input id="txtMail" type="email" placeholder="Email">
+    <input id="txtMail" type="email" placeholder="Email">
 ```
 
 ```javascript
-  emailControl('txtMail'); // return true or false
+    emailControl('txtMail'); // return true or false
+```
+
+**Date Validate**
+
+```html
+    <input type="date" id="txtDate" value="2018-07-29" />
+```
+
+```javascript
+    dateControl('txtDate'); // return true or false
+```
+
+**Custom Date Validate**
+
+```javascript
+    //Format: DD/MM/YYYY
+    customDateControl('29/06/2018'); // return true or false
 ```
 
 **Iban Validate**
